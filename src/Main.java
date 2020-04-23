@@ -6,7 +6,7 @@ public class Main {
 
         // OOP Principal
         /**
-         * 1. Class and Object
+         * 1. Class and Object jfjh
          * 2. Encapsulation
          * 3. Abstraction
          * 4. Inheritance
