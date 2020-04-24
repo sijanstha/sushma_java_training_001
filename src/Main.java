@@ -1,36 +1,28 @@
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]) {
-        // data type, loop, control statement, operator (basic kura haru vayo)
-
-        // OOP Principal
-        /**
-         * 1. Class and Object jfjh
-         * 2. Encapsulation
-         * 3. Abstraction
-         * 4. Inheritance
-         * 5. Polymorphism
-         */
-
-        // Today's topic:
-        // Git and Github
-        // Class and Object, Constructor
-        // Method and its return types with parameters
-        // Scanner class
-        // Encapsulation and Abstraction
+        // Today's Topic (Fri April 24)
+        // Review of Assignment 2
+        // Encapsulation
+        // Abstraction
+        // Inheritance
+        // Polymorphism
+        // interface and abstract class
+        // Build a Music Application using OOP Concept.
         // Problem
 
-        /*
-            1. git init (initializes repository)
-            2. git add <file name> (add file to index)
-            3. git status (check status of working tree)
-            4. git commit (commit changes in index)
-            5. git push (push your code to central repo)
-            6. git pull (pull latest project from central/remote repo)
-         */
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter password: ");
+        String password = scanner.nextLine();
 
+        PasswordChecker passwordChecker = new PasswordChecker();
+        boolean flag = passwordChecker.checkPasswordStrength(password);
 
+        if (flag)
+            System.out.println("You're good to go!!!");
+        else
+            System.out.println("Please follow password guideline.!!");
 
     }
 }
