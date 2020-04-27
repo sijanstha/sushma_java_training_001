@@ -8,6 +8,17 @@ public class Student {
     // No return type
     // same as class name
 
+    public void setStudentDetail(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    public void setStudentDetail(String name, String address, int age) {
+        this.name = name;
+        this.address = address;
+        this.age = age;
+    }
+
     // default constructor
     public Student() {
         System.out.println("Hello there");
@@ -15,6 +26,11 @@ public class Student {
 
     // parameterize constructor
     public Student(String address) {
+        this.address = address;
+    }
+
+    public Student(String name, String address) {
+        this.name = name;
         this.address = address;
     }
 

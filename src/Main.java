@@ -2,27 +2,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]) {
-        // Today's Topic (Fri April 24)
-        // Review of Assignment 2
-        // Encapsulation
-        // Abstraction
-        // Inheritance
-        // Polymorphism
-        // interface and abstract class
-        // Build a Music Application using OOP Concept.
-        // Problem
+        System.out.println("Lodaing Normal Player");
+        Player player = new Player();
+        player.play();
+        player.next();
+        player.pause();
+        player.prev();
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter password: ");
-        String password = scanner.nextLine();
+        System.out.println("Lodaing MP3 Player");
+        player = new Mp3Player();
+        player.play();
+        player.next();
+        player.pause();
+        player.prev();
 
-        PasswordChecker passwordChecker = new PasswordChecker();
-        boolean flag = passwordChecker.checkPasswordStrength(password);
-
-        if (flag)
-            System.out.println("You're good to go!!!");
-        else
-            System.out.println("Please follow password guideline.!!");
+        // advance form
+        // user lai control dinu paryo
+        // user have to choose which music player he/she
+        // wants to paly
+        // user should choose what to do
+        // play -> pause
 
     }
 }
